@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="34dp"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColorHint="#000000"
+
+        android:textColor="#546E7A"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/email_customer_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_login"
+        android:textColorHint="#546E7A" />
+
+    <EditText
+        android:id="@+id/password_customer_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_login"
+        android:inputType="textPassword"
+        android:textColorHint="#262829" />
+
+    <Button
+    android:id="@+id/login_customer_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:background="#212220"
+    android:text= "@string/login_login"
+    tools:ignore="DuplicateSpeakableTextCheck">
+    </Button>
+<Button
+android:id="@+id/register_customer_button"
+android:layout_width="wrap_content"
+android:layout_marginTop="30dp"
+android:layout_height="wrap_content"
+    android:background="#212220"
+android:text="@string/create_account_login" />
+
+    </LinearLayout>
+

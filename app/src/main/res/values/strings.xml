@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="create_account">Create Account</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="email_login">Email</string>
+    <string name="login_login">Login</string>
+    <string name="create_account_login">Create Account</string>
+    <string name="password_login">Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="music_name">Music name</string>
+</resources>
