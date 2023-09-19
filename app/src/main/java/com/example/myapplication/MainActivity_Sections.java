@@ -67,8 +67,8 @@ public class MainActivity_Sections extends AppCompatActivity {
         }
 
     }
-    public static ArrayList<Songs> getMusic(Context context){
-        ArrayList <Songs>  temp_list = new ArrayList<>();
+    public static ArrayList<Songs> getMusic(Context context) {
+        ArrayList<Songs> temp_list = new ArrayList<>();
         Uri uri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
         String[] projection = {
                 MediaStore.Audio.Media.ALBUM,
@@ -77,9 +77,22 @@ public class MainActivity_Sections extends AppCompatActivity {
                 MediaStore.Audio.Media.DATA,
                 MediaStore.Audio.Media.TITLE
         };
-        Cursor cursor =
 
+    Cursor cursor = context.getContentResolver().query(uri,projection,null,null,null);
+    if (cursor!=null){
+        while(cursor.moveToNext()){
+            String album = cursor.getString(0);
+            String duration = cursor.getString(0);
+            String artist = cursor.getString(0);
+            String file = cursor.getString(0);
+            String title = cursor.getString(0);
+            Songs song = new Songs(file,title,duration,artist,album);
+            temp_list.add(song);
+        }
+        cursor.close();
 
+    }
+    return temp_list;
     }
 
 }

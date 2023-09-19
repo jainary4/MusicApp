@@ -2,4 +2,5 @@
 <resources>
     <item name="tab_layout" type="id"> </item>
     <item name="view_pager" type="id"> </item>
+    <item name="song_image_container" type="id">image container song</item>
 </resources>

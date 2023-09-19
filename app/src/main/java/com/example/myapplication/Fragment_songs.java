@@ -22,7 +22,6 @@ public class Fragment_songs extends Fragment {
     private Music_panel_Adapter music_adapter;
 
 
-
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -67,10 +66,12 @@ public class Fragment_songs extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view =inflater.inflate(R.layout.fragment_songs, container, false);
-        recycler_view= view.findViewById(R.id.recycler_view_songs);
+        View view = inflater.inflate(R.layout.fragment_songs, container, false);
+        recycler_view = view.findViewById(R.id.recycler_view_songs);
         recycler_view.hasFixedSize();
-        if(!(songlist.size()<1)){
+        return view;
+
+       /* if(!(songlist.size()<1)){
             music_adapter= new Music_panel_Adapter(getContext(),songlist);
             recycler_view.setAdapter(music_adapter);
             recycler_view.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.VERTICAL,false));
@@ -78,5 +79,6 @@ public class Fragment_songs extends Fragment {
 
 
         return view;
+    }*/
     }
 }
